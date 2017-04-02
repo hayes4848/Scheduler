@@ -1,2 +1,6 @@
 <h1>Lesson List</h1>
 
+<%= month_calendar start_date_param: :date do |date| %>
+  <%="#{date.month}" + "/" + "#{date.day}"%>
+<% end %>
+
