@@ -1,0 +1,2 @@
+module AvailabilityBlockHelper
+end

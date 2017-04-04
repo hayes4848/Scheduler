@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :availability_block
+
   get 'lesson/index'
 
   get 'lesson/edit'

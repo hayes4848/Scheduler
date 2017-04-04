@@ -6,3 +6,10 @@
 - roles (super admin role, regular admin, member/user) (cancancan)
 - allow members to block out lesson times
 - app maybe displays event calendar(hot push, push event) as well as specials
+
+
+- create availability model, 
+- when a user selects avail. block, we create a lesson object
+- assign the lesson object to a instructor
+
+- what attributes does availability have? (start_time, end_time, horse, instructor_id, type_of_lesson)
