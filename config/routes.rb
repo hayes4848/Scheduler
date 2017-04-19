@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  root to: 'lesson#index'
+
   resources :availability_block
 
   get 'lesson/index'

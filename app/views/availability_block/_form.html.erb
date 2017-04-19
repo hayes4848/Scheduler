@@ -1,0 +1,8 @@
+<%= simple_form_for @availability_block, url: availability_block_path, method: :put do |f| %>
+  <%= f.input :type_of_lesson %>
+  <%= f.input :availability_title %>
+  <%= f.input :instructor_id, collection: [["Jim", 1], ["John", 2], ["dumb girl", 3]] %>
+  <%= f.datetime_field :start_time %>
+  <%= f.datetime_field :end_time %>
+  <%= f.button :submit %>
+<% end %>

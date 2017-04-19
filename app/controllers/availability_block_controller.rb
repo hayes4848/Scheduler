@@ -1,15 +1,23 @@
 class AvailabilityBlockController < ApplicationController
   
   def index
+    @blocks = AvailabilityBlock.all
   end
 
   def show
   end
 
   def update
+    @availability_block = AvailabilityBlock.find(params[:id])
+    @availability_block.update(availability_block_params)
+    redirect_to availability_block_index_path
   end
 
   def destroy
+    block = AvailabilityBlock.find(params[:id])
+    if block.destroy
+      redirect_to availability_block_index_path
+    end
   end
 
   def create
@@ -20,6 +28,7 @@ class AvailabilityBlockController < ApplicationController
   end
 
   def edit
+    @availability_block = AvailabilityBlock.find(params[:id])
   end
 
   def new
